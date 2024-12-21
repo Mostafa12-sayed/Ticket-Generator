@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog View</title>
+    <link type="text/css" rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <main role="main">
+      <img
+        id="bg-squiggly-top"
+        src="./Images/pattern-squiggly-line-top.svg"
+        alt=""
+      />
+      <img
+        id="bg-squiggly-bottom"
+        src="./Images/pattern-squiggly-line-bottom.svg"
+        alt=""
+      />
+
+      <img id="bg-dots" src="./Images/pattern-circle.svg" alt="" />
+      <img id="bg-dots-2" src="./Images/pattern-circle.svg" alt="" />
+
+      <div class="container">
+        <div class="top flexDev">
+          <img src="./Images/logo-mark.svg" alt="logo" />
+          <h2>Coding conf</h2>
+        </div>
+        <div class="intro-container flexDev">
+          <p class="intro intro-main-ticket">
+            Congarts,<br />
+            <span id="name"> sayed ahmed</span>! <br />
+            Your ticket is ready.
+          </p>
+          <p class="intro-sub-ticket">
+            We've emailed ticket to <br />
+            <span id="email">mostafa@gmail.com</span> and will send updates in
+            the run up to the event
+          </p>
+        </div>
+        <div class="ticket-container flexDev">
+          <div class="ticket-left flexDev">
+            <div class="ticket-header flexDev">
+              <img src="./Images/logo-mark.svg" alt="icon" />
+              <div class="ticket-title flexDev">
+                <h2>codeing conf</h2>
+                <p id="date">August 2021 / AUTH , TX</p>
+              </div>
+            </div>
+            <div class="ticket-item flexDev">
+              <img
+                src="./Images/image-avatar.jpg"
+                alt="icon"
+                id="userImageUpload"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 10px;
+                  margin-right: 10px;
+                "
+              />
+              <div class="ticket-item-text flexDev">
+                <h3>Mostafa sayed</h3>
+                <label for="github">
+                  <img src="./Images/icon-github.svg" alt="icon" />
+                  <span id="github">@sayedahmed</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="ticket-right">
+            <h3>#123456789</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./Js/ticket.js"></script>
+</html>

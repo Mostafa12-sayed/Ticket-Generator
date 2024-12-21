@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Generator</title>
+    <link type="text/css" rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <main role="main">
+      <img
+        id="bg-squiggly-top"
+        src="./Images/pattern-squiggly-line-top.svg"
+        alt=""
+      />
+      <img
+        id="bg-squiggly-bottom"
+        src="./Images/pattern-squiggly-line-bottom.svg"
+        alt=""
+      />
+
+      <img id="bg-dots" src="./Images/pattern-circle.svg" alt="" />
+      <img id="bg-dots-2" src="./Images/pattern-circle.svg" alt="" />
+
+      <div class="container">
+        <div class="top flexDev">
+          <img src="./Images/logo-mark.svg" alt="logo" />
+          <h2>Coding conf</h2>
+        </div>
+        <div class="intro-container flexDev">
+          <p class="intro">Your Journey to Coding Conf 2025 starts Here!</p>
+          <p class="intro-sub">
+            Secure your spot at next year's biggest coding conference .
+          </p>
+        </div>
+        <div class="form flexDev">
+          <!-- <form> -->
+          <div class="form">
+            <div class="form-group flexDev">
+              <label for="image">Upload Avatar</label>
+              <div class="input-file">
+                <div class="image-preview" id="image-preview">
+                  <img
+                    src="./Images/image-avatar.jpg"
+                    alt="preview"
+                    id="show-image-user"
+                  />
+                  <div class="image-button-action flexDev">
+                    <button
+                      type="button"
+                      id="remove-image"
+                      class="btn-action-image"
+                    >
+                      Remove Image
+                    </button>
+
+                    <button
+                      type="button"
+                      id="change-image"
+                      class="btn-action-image"
+                    >
+                      Change Image
+                    </button>
+                  </div>
+                </div>
+                <div class="image-preview-overlay" id="image-preview-overlay">
+                  <label for="file-input">
+                    <img src="./Images/icon-upload.svg" />
+                  </label>
+                  <p>drag and drop or click to select a file</p>
+                  <input id="file-input" type="file" required />
+                </div>
+              </div>
+
+              <lable class="label-file" id="file-error">
+                <img
+                  src="./Images/icon-info.svg"
+                  alt="info"
+                  id="icon-info"
+                  style="color: red"
+                />
+                <span id="label-file-info"
+                  >Upload your photo (JPG or PNG , max size 500kB)</span
+                >
+              </lable>
+            </div>
+            <div class="form-group flexDev">
+              <label for="fullName">Full Name</label>
+              <input id="fullName" type="text" name="name" required />
+            </div>
+            <div class="form-group flexDev">
+              <label for="userEmail">Email Address</label>
+              <input
+                id="userEmail"
+                type="email"
+                name="email"
+                required
+                placeholder="example@example.com"
+              />
+            </div>
+            <div class="form-group flexDev">
+              <label for="github">Github Username</label>
+              <input
+                id="github"
+                type="text"
+                name="github"
+                required
+                placeholder="@yourusername"
+              />
+            </div>
+
+            <div class="form-group flexDev">
+              <input type="submit" value="Generate My Ticket" id="tiket" />
+            </div>
+          </div>
+          <!-- </form> -->
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./Js/script.js"></script>
+</html>
